@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rock, Paper, Scissor Game</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  
+  
+  <h1>Rock Paper Scissor Game</h1>
+
+  
+  <button class="choice-button" onclick="
+  let randomNumber = Math.random()*3;
+  let machineChoice;
+  if(randomNumber > 0 && randomNumber <=1){
+    machineChoice = 'Rock';
+  }else if(randomNumber > 1 && randomNumber <=2){
+    machineChoice = 'Paper';
+  }else {
+    machineChoice = 'Scissor';
+  }
+  
+  let printMsg;
+
+  if(machineChoice === 'Paper'){
+    printMsg = 'You won';
+  }else if(machineChoice === 'Scissor'){
+    printMsg = 'Computer has won';
+  }else if(machineChoice === 'Rock'){
+    printMsg = `It's a Tie`;
+  }
+
+  alert(`You have chosen Rock. Computer choice is ${machineChoice} and ${printMsg}`)
+  
+  "><img class="choice-image" src="rock.png" alt="rock"></button>
+
+
+<!-- 222222222222222222222222222222 choice -->
+  <button class="choice-button" onclick="
+  randomNumber = Math.random()*3;
+  if(randomNumber > 0 && randomNumber <=1){
+    machineChoice = 'Rock';
+  }else if(randomNumber > 1 && randomNumber <=2){
+    machineChoice = 'Paper';
+  }else {
+    machineChoice = 'Scissor';
+  }
+
+  if(machineChoice === 'Paper'){
+    printMsg = `It's a Tie`;
+  }else if(machineChoice === 'Scissor'){
+    printMsg = 'Computer has won';
+  }else if(machineChoice === 'Rock'){
+    printMsg = 'You won';
+  }
+
+  alert(`You have chosen Paper. Computer choice is ${machineChoice} and ${printMsg}`)"
+  ><img class="choice-image" src="paper.png" alt="rock"></button>
+
+<!-- 3333333333333333333333333333333333333 choice -->
+  <button class="choice-button" onclick="
+  randomNumber = Math.random()*3;
+  if(randomNumber > 0 && randomNumber <=1){
+    machineChoice = 'Rock';
+  }else if(randomNumber > 1 && randomNumber <=2){
+    machineChoice = 'Paper';
+  }else {
+    machineChoice = 'Scissor';
+  }
+
+  if(machineChoice === 'Paper'){
+    printMsg = 'You Won';
+  }else if(machineChoice === 'Scissor'){
+    printMsg = `It's a Tie`;
+  }else if(machineChoice === 'Rock'){
+    printMsg = 'Computer has won';
+  }
+
+  alert(`You have chosen Scissor. Computer choice is ${machineChoice} and ${printMsg}`)"
+
+
+
+  ><img class="choice-image" src="scissor.png" alt="rock"></button>
+  
+
+</body>
+</html>
